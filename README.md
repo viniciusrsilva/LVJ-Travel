@@ -1,1 +1,2 @@
 # LVJ-Travel
+Projeto interdisciplinar desenvolvido sob orientação das disciplinas de Banco de Dados, Engenheria de Software, Linguagem e Técnica de Programação II e Multimídia e Hipermidia pelos alunos Vinícius Rodrigues da Silva, João Henrique Vieira e Leonardo Henrique Pereira Urbado do 3º Ano de Sistemas de Informação da União das Faculdades dos Grandes Lagos - UNILAGO de São José do Rio Preto-SP.
