@@ -1,0 +1,58 @@
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+#carouselPai{
+    margin-top: 20px;
+}
+
+h1{
+    padding-top:20px; 
+    text-align: center;
+}
+
+h4{
+    color: black;
+}
+
+#imgAviao{
+    float: left;
+}
+
+#escolheViagem{
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#saindo, #chegando, #data, #hora {
+    width: 100%;
+    height: 45px;
+}
+
+#btnProcurar{
+    margin-top: 30px;
+}
+
+#travel{
+    padding-top:60px;
+    padding-bottom: 20px;
+}
+
+#newsletter{
+    background-color: #f2f2f2;
+    border: 1px solid #eae9e9;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#btnCadastrar{
+    float: right;
+    margin-top: 10px;
+}
+
+#divEmail{
+    margin-top: 40px;
+}

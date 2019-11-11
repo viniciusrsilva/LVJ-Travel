@@ -1,0 +1,17 @@
+﻿#titulo {
+    color: white;
+    font-size: large;
+}
+
+#divConteudo {
+    margin-top: 75px;
+}
+
+#tabelaOrigensdestinos{
+    margin-top: 60px;
+}
+
+#btnSalvar {
+    float: right;
+    margin-top: 20px;
+}

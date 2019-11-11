@@ -1,0 +1,15 @@
+#imgReservas {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#idlogincliente {
+    margin-top: 30px;
+    width: 50%; 
+    border:outset 4px gray;
+}
+
+#btnAcessar {
+    text-align: center;
+    float: right;
+}

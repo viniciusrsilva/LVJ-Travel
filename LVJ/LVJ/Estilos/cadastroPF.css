@@ -1,0 +1,40 @@
+﻿#imgCadastro {
+    margin-top: 75px;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#pOpcao {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#estado {
+    font-size: 12pt;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+#optEstado {
+    width: 100%;
+}
+
+#dadosAcesso, #endereco {
+    margin-top: 20px;
+}
+
+#btnSalvar {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#footer {
+    margin-top: 60px;
+}

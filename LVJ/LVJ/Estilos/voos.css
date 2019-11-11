@@ -1,0 +1,13 @@
+﻿#titulo {
+    color: white;
+    font-size: large;
+}
+
+#divVoos {
+    margin-top: 75px;
+}
+
+#btnAdicionarVoo {
+    margin-left: 95%;
+    margin-top: 20px;
+}

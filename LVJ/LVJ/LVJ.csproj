@@ -1,0 +1,515 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{674406DB-11B2-4E0C-BA5E-BF140252B1B6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LVJ</RootNamespace>
+    <AssemblyName>LVJ</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.17\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adicionar-voo.aspx" />
+    <Content Include="administrativo.aspx" />
+    <Content Include="cadastre-se.aspx" />
+    <Content Include="cadastroPF.aspx" />
+    <Content Include="cadastroPJ.aspx" />
+    <Content Include="destinos.aspx" />
+    <Content Include="documentos.aspx" />
+    <Content Include="escolha-assento.aspx" />
+    <Content Include="Estilos\busca.css" />
+    <Content Include="Estilos\cadastre-se.css" />
+    <Content Include="Estilos\cadastro-sucesso.css" />
+    <Content Include="Estilos\cadastroPF.css" />
+    <Content Include="Estilos\cadastroPJ.css" />
+    <Content Include="Estilos\escolhaAssento.css" />
+    <Content Include="img\boeing.png" />
+    <Content Include="img\cadastre-se.png" />
+    <Content Include="img\esqueci-minha-senha.png" />
+    <Content Include="img\meus-dados.png" />
+    <Content Include="img\reserva-passagem.png" />
+    <Content Include="Estilos\informacoes-clientePJ.css" />
+    <Content Include="inicio-restrito.aspx" />
+    <Content Include="meus-dadosPF.aspx" />
+    <Content Include="meus-dadosPJ.aspx" />
+    <Content Include="Estilos\informacoes-clientePF.css" />
+    <Content Include="Estilos\minhas-reservas.css" />
+    <Content Include="inicio.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="Estilos\recuperar-senha.css" />
+    <Content Include="minhas-reservas.aspx" />
+    <Content Include="origens.aspx" />
+    <Content Include="adicionar-aeronave.aspx" />
+    <Content Include="Estilos\addAeronaves.css" />
+    <Content Include="aeronaves.aspx" />
+    <Content Include="Estilos\aeronaves.css" />
+    <Content Include="img\restrito\origensDestinos.png" />
+    <Content Include="img\restrito\viagens.png" />
+    <Content Include="Estilos\addVoo.css" />
+    <Content Include="img\restrito\inicio.png" />
+    <Content Include="img\restrito\relatorios.png" />
+    <Content Include="img\restrito\usuario.png" />
+    <Content Include="img\restrito\aeronaves.png" />
+    <Content Include="Estilos\origensDestinos.css" />
+    <Content Include="Estilos\relatorios.css" />
+    <Content Include="rel-clientes.aspx" />
+    <Content Include="rel-reservas.aspx" />
+    <Content Include="relatorios.aspx" />
+    <Content Include="saude.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sucesso.aspx" />
+    <Content Include="usuarios.aspx" />
+    <Content Include="Estilos\usuarios.css" />
+    <Content Include="Estilos\inicioRestrito.css" />
+    <Content Include="Estilos\voos.css" />
+    <Content Include="vacinas.aspx" />
+    <Content Include="voos.aspx" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="atendimento.aspx" />
+    <Content Include="Estilos\atendimento.css" />
+    <Content Include="Estilos\footer.css" />
+    <Content Include="footer.html" />
+    <Content Include="img\documentos.png" />
+    <Content Include="img\documentos\iconDocumentos.PNG" />
+    <Content Include="img\documentos\iconInterrogacao.png" />
+    <Content Include="img\documentos\iconPassaporte.png" />
+    <Content Include="img\fale-conosco.png" />
+    <Content Include="img\reservas.png" />
+    <Content Include="img\saude.png" />
+    <Content Include="img\saude\iconAlergias.png" />
+    <Content Include="img\saude\iconClima.png" />
+    <Content Include="img\saude\IconCuidados.png" />
+    <Content Include="img\saude\iconDiarreia.png" />
+    <Content Include="img\saude\iconDoenças.png" />
+    <Content Include="img\saude\iconDor.png" />
+    <Content Include="img\saude\iconEnjoo.png" />
+    <Content Include="img\saude\iconJetlag.png" />
+    <Content Include="img\saude\iconMergulho.png" />
+    <Content Include="img\saude\iconSaude.png" />
+    <Content Include="img\saude\iconSol.png" />
+    <Content Include="img\saude\iconTrombose.png" />
+    <Content Include="img\saude\iconVacina.png" />
+    <Content Include="img\vacinas.png" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="img\aviao.png" />
+    <Content Include="img\banner\banner1.png" />
+    <Content Include="img\banner\banner2.png" />
+    <Content Include="img\banner\banner3.png" />
+    <Content Include="img\calendario.png" />
+    <Content Include="img\cards\bombinhas.jpg" />
+    <Content Include="img\cards\capitolio.jpg" />
+    <Content Include="img\cards\gramado.jpg" />
+    <Content Include="img\cards\riodejaneiro.jpg" />
+    <Content Include="Estilos\documentos.css" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="Estilos\inicio.css" />
+    <Content Include="Estilos\restrito.css" />
+    <Content Include="Estilos\login.css" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\newsletter.png" />
+    <Content Include="Estilos\saude.css" />
+    <Content Include="img\travel.png" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Estilos\vacinas.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adicionar-voo.aspx.cs">
+      <DependentUpon>adicionar-voo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adicionar-voo.aspx.designer.cs">
+      <DependentUpon>adicionar-voo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrativo.aspx.cs">
+      <DependentUpon>administrativo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrativo.aspx.designer.cs">
+      <DependentUpon>administrativo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="atendimento.aspx.cs">
+      <DependentUpon>atendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="atendimento.aspx.designer.cs">
+      <DependentUpon>atendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastre-se.aspx.cs">
+      <DependentUpon>cadastre-se.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastre-se.aspx.designer.cs">
+      <DependentUpon>cadastre-se.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPF.aspx.cs">
+      <DependentUpon>cadastroPF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroPF.aspx.designer.cs">
+      <DependentUpon>cadastroPF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPJ.aspx.cs">
+      <DependentUpon>cadastroPJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroPJ.aspx.designer.cs">
+      <DependentUpon>cadastroPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="destinos.aspx.cs">
+      <DependentUpon>destinos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="destinos.aspx.designer.cs">
+      <DependentUpon>destinos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="documentos.aspx.cs">
+      <DependentUpon>documentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="documentos.aspx.designer.cs">
+      <DependentUpon>documentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entidade\eEscolhaAssento.cs" />
+    <Compile Include="Entidade\eMostrarDados.cs" />
+    <Compile Include="Entidade\eAdicionarVoo.cs" />
+    <Compile Include="Entidade\eAeronave.cs" />
+    <Compile Include="Entidade\eCadastroPF.cs" />
+    <Compile Include="Entidade\eCadastroPJ.cs" />
+    <Compile Include="Entidade\eDestinos.cs" />
+    <Compile Include="Entidade\eEstado.cs" />
+    <Compile Include="Entidade\eInicio.cs" />
+    <Compile Include="Entidade\eOrigens.cs" />
+    <Compile Include="Entidade\eUsuario.cs" />
+    <Compile Include="Entidade\eVoo.cs" />
+    <Compile Include="Entidade\eLogin.cs" />
+    <Compile Include="escolha-assento.aspx.cs">
+      <DependentUpon>escolha-assento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="escolha-assento.aspx.designer.cs">
+      <DependentUpon>escolha-assento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio-restrito.aspx.cs">
+      <DependentUpon>inicio-restrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio-restrito.aspx.designer.cs">
+      <DependentUpon>inicio-restrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="meus-dadosPF.aspx.cs">
+      <DependentUpon>meus-dadosPF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meus-dadosPF.aspx.designer.cs">
+      <DependentUpon>meus-dadosPF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="meus-dadosPJ.aspx.cs">
+      <DependentUpon>meus-dadosPJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="meus-dadosPJ.aspx.designer.cs">
+      <DependentUpon>meus-dadosPJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="minhas-reservas.aspx.cs">
+      <DependentUpon>minhas-reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="minhas-reservas.aspx.designer.cs">
+      <DependentUpon>minhas-reservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\nAdicionarVoo.cs" />
+    <Compile Include="Negocio\nAeronave.cs" />
+    <Compile Include="Negocio\nCadastroPF.cs" />
+    <Compile Include="Negocio\nCadastroPJ.cs" />
+    <Compile Include="Negocio\nDestinos.cs" />
+    <Compile Include="Negocio\nEscolhaAssento.cs" />
+    <Compile Include="Negocio\nEstado.cs" />
+    <Compile Include="Negocio\nInicio.cs" />
+    <Compile Include="Negocio\nOrigens.cs" />
+    <Compile Include="Negocio\nRelClientes.cs" />
+    <Compile Include="Negocio\nRelReservas.cs" />
+    <Compile Include="Negocio\nUsuario.cs" />
+    <Compile Include="Negocio\nVoo.cs" />
+    <Compile Include="Negocio\nMostrarDados.cs" />
+    <Compile Include="Negocio\nLogin.cs" />
+    <Compile Include="origens.aspx.cs">
+      <DependentUpon>origens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="origens.aspx.designer.cs">
+      <DependentUpon>origens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="adicionar-aeronave.aspx.cs">
+      <DependentUpon>adicionar-aeronave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adicionar-aeronave.aspx.designer.cs">
+      <DependentUpon>adicionar-aeronave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aeronaves.aspx.cs">
+      <DependentUpon>aeronaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aeronaves.aspx.designer.cs">
+      <DependentUpon>aeronaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rel-clientes.aspx.cs">
+      <DependentUpon>rel-clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rel-clientes.aspx.designer.cs">
+      <DependentUpon>rel-clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rel-reservas.aspx.cs">
+      <DependentUpon>rel-reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rel-reservas.aspx.designer.cs">
+      <DependentUpon>rel-reservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="relatorios.aspx.cs">
+      <DependentUpon>relatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="relatorios.aspx.designer.cs">
+      <DependentUpon>relatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="saude.aspx.cs">
+      <DependentUpon>saude.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="saude.aspx.designer.cs">
+      <DependentUpon>saude.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="sucesso.aspx.cs">
+      <DependentUpon>sucesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sucesso.aspx.designer.cs">
+      <DependentUpon>sucesso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.aspx.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarios.aspx.designer.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\conexao.cs" />
+    <Compile Include="vacinas.aspx.cs">
+      <DependentUpon>vacinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vacinas.aspx.designer.cs">
+      <DependentUpon>vacinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="voos.aspx.cs">
+      <DependentUpon>voos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="voos.aspx.designer.cs">
+      <DependentUpon>voos.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49917</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49918/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿#titulo {
+    color: white;
+    font-size: large;
+}
+
+#divConteudo {
+    margin-top: 75px;
+}
+
+label{
+    margin-top: 15px;
+}
+
+#btnSalvar{
+    float: right;
+    margin-top: 20px;
+}

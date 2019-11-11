@@ -1,0 +1,33 @@
+﻿#imgBusca {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#conteudo{
+    margin-top: 20px;
+}
+
+#reserva{
+    margin-top: 20px;
+}
+
+#btnSalvar{
+    float: right;
+    margin-top: 5px;
+}
+
+#footer{
+    margin-top: 70px;
+}
+
+#txtFirst, #txtBusiness, #txtEconomy, #resFirst, #resBusiness, #resEconomy, #txtOrigem, #txtDestino, #txtDia, #txtHora{
+    text-align: center;
+}
+
+#tituloReservar{
+    margin-top: 25px;
+}
+
+#divErro, #divErro2, #erroFirst, #erroBusiness, #erroEconomy{
+    margin-top: 20px;
+}

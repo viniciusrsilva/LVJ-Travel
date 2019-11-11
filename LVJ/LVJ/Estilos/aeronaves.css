@@ -1,0 +1,18 @@
+﻿#titulo {
+    color: white;
+    font-size: large;
+}
+
+#divConteudo {
+    margin-top: 75px;
+}
+
+#btnAdicionar {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabelaAeronaves {
+    margin-top: 20px;
+}

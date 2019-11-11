@@ -1,0 +1,14 @@
+﻿#restrito {
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type=button]{
+    background: url("img/usuario.png");
+}
+
+#btnTitulo{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

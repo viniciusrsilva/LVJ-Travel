@@ -1,0 +1,17 @@
+﻿#titulo{
+    color: white;
+    font-size: large;
+}
+
+#divUsuarios{
+    margin-top: 75px;
+}
+
+#salvarUsuario {
+    margin-top: 20px;
+    margin-left: 93%;
+}
+
+#tabelaUsuarios{
+    margin-top: 20px;
+}

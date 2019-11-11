@@ -1,0 +1,26 @@
+﻿#titulo {
+    color: white;
+    font-size: large;
+}
+
+#divVoosAdd {
+    margin-top: 95px;
+}
+label{
+    margin-top: 5px;
+}
+
+#horaPartida{
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+input[type=date] {
+    border: transparent;
+    width: 100%;
+}
+
+#btnSalvarVoo {
+    margin-top: 20px;
+    margin-left: 94%;
+}

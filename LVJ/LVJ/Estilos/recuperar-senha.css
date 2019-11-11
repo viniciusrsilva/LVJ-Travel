@@ -1,0 +1,16 @@
+﻿#imgSenha {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#recuperaSenha {
+    margin-top: 30px;
+    width: 50%;
+    border: outset 4px gray;
+    padding-bottom: 30px;
+}
+
+#btnRecuperar {
+    text-align: center;
+    float: right;
+}

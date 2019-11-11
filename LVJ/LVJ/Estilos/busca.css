@@ -1,0 +1,20 @@
+﻿#imgBusca {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#origemDestino{
+    margin-top: 20px;
+}
+
+#imgOrigemDestino{
+    margin-top: 30px;
+}
+
+#btnSelecionar{
+    float: right;
+}
+
+#numeroVoo{
+    color: white;
+}

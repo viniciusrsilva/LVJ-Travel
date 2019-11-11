@@ -1,0 +1,37 @@
+﻿#imgCadastro {
+    margin-top: 75px;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#pOpcao {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#btnPF, #btnPJ {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+#btnPJ {
+    margin-left: 30px;    
+}
+
+#tipoPessoa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.box
+{
+    width: 300px;
+    height: 70px;
+}

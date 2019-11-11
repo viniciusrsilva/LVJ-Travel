@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restrito | LVJ Travel</title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="Login_ADM.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body data-spy="scroll" data-targer=".navbar" data-offset="50">
+
+    <div id="header"></div>
+
+    <div id="apresentacaoLogin" class="container">
+        <h3><strong>Acesso restrito</strong></h3>
+        <p>Para acessar a área restrita identifique-se com CPF e sua senha pessoal.</p>
+    </div>
+
+    <div id="idloginadm" class="container bg-light">
+        <form style="padding: 20px" class="need-validated">
+            <div class="form-group">
+                <label for="txtCPF"><strong>CPF:</strong></label>
+                <input type="text" id="txtCPF" placeholder="Digite seu CPF" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="txtsenha"><strong>Senha:</strong></label>
+                <input type="password" id="txtsenha" placeholder="Digite sua Senha" class="form-control" required>
+            </div>
+            <div id="acessar_adm" class="form-group">
+                <button class="btn btn-dark" type="submit">Acessar</button>
+            </div>
+        </form>
+        <p><a href="#">Esqueci minha senha</a></p>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>

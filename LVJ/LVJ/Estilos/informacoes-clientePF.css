@@ -1,0 +1,39 @@
+﻿#imgInformacoesCliente {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#informacoes {
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+#Salvar_Alteracoes {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 94%;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#atencao {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#endereco{
+    margin-top: 20px;
+}
+
+#estado{
+    font-size: 12pt;
+    margin-bottom: 7px;
+}
+
+#optEstado{
+    width: 100%;
+}

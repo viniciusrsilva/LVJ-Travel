@@ -1,0 +1,26 @@
+﻿#img {
+    margin-top: 75px;
+    width: 100%;
+}
+
+#conteudo {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#btnEnviar{
+    margin-top: 20px;
+    float: right;
+}
+
+label{
+    margin-top: 10px;
+}
+
+#footer{
+    margin-top: 50px;
+}
+
+#divAtendimento{
+    margin-top: 50px;
+}

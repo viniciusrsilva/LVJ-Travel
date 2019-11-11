@@ -1,0 +1,27 @@
+#idloginadm{
+    width: 50%;
+    border: outset 4px gray;
+}
+
+#acessar_adm{
+    text-align: center;
+}
+
+#apresentacaoLogin{
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#rodape {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

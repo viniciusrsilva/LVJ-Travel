@@ -1,0 +1,30 @@
+#imgVacina{
+    margin-top: 75px;
+    width: 100%;
+}
+
+#banner {
+    display: inline-block;
+    position: relative;
+}
+
+#conteudo{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#destinosObrigatorios{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#destinosObrigatorios h5{
+    color: #436389;
+    text-align: center;
+}
+
+#observacoes{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 10pt;
+}
