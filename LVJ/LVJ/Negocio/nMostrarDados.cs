@@ -14,7 +14,7 @@ namespace LVJ.Negocio
         {
             try
             {
-                string query = $"SELECT idorigem, cidadeOrigem FROM voo INNER JOIN origens ON voo.origem = origens.idorigem WHERE disponivel = 'S' GROUP BY cidadeOrigem ORDER BY cidadeOrigem";
+                string query = $"SELECT idorigem, cidadeOrigem FROM voo INNER JOIN origens ON voo.origem = origens.idorigem WHERE DATE_FORMAT(STR_TO_DATE(dataViagem, '%d/%m/%Y'), '%Y-%m-%d') >= CURDATE() GROUP BY cidadeOrigem ORDER BY cidadeOrigem";
                 conexao.CarregaTabela(query, dados);
             }
             catch (Exception exp)
@@ -27,7 +27,7 @@ namespace LVJ.Negocio
         {
             try
             {
-                string query = $"SELECT iddestinos, cidadeDestino FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " WHERE disponivel = 'S' GROUP BY cidadeDestino ORDER BY cidadeDestino";
+                string query = $"SELECT iddestinos, cidadeDestino FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " WHERE DATE_FORMAT(STR_TO_DATE(dataViagem, '%d/%m/%Y'), '%Y-%m-%d') >= CURDATE() GROUP BY cidadeDestino ORDER BY cidadeDestino";
                 conexao.CarregaTabela(query, dados);
             }
             catch (Exception exp)
@@ -40,7 +40,7 @@ namespace LVJ.Negocio
         {
             try
             {
-                string query = $"SELECT cidadeDestino, dataViagem FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " AND voo.destino = " + selDestino + " WHERE disponivel = 'S' GROUP BY dataViagem ORDER BY dataViagem";
+                string query = $"SELECT cidadeDestino, dataViagem FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " AND voo.destino = " + selDestino + " WHERE DATE_FORMAT(STR_TO_DATE(dataViagem, '%d/%m/%Y'), '%Y-%m-%d') >= CURDATE() GROUP BY dataViagem ORDER BY dataViagem";
                 conexao.CarregaTabela(query, dados);
             }
             catch (Exception exp)
@@ -53,7 +53,7 @@ namespace LVJ.Negocio
         {
             try
             {
-                string query = $"SELECT cidadeDestino, dataViagem, horaPartida FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " AND voo.destino = " + selDestino + " WHERE disponivel = 'S' GROUP BY horaPartida ORDER BY horaPartida";
+                string query = $"SELECT cidadeDestino, dataViagem, horaPartida FROM voo INNER JOIN destinos ON voo.destino = destinos.iddestinos AND voo.origem = " + selOrigem + " AND voo.destino = " + selDestino + " WHERE DATE_FORMAT(STR_TO_DATE(dataViagem, '%d/%m/%Y'), '%Y-%m-%d') >= CURDATE() GROUP BY horaPartida ORDER BY horaPartida";
                 conexao.CarregaTabela(query, dados);
             }
             catch (Exception exp)
@@ -87,6 +87,5 @@ namespace LVJ.Negocio
                 throw exp;
             }
         }
-
     }
 }

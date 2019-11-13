@@ -12,7 +12,7 @@ namespace LVJ
 	public partial class inicio : System.Web.UI.Page
 	{
         nInicio marketing = new nInicio();
-        nMostrarDados status = new nMostrarDados();
+        
 		protected void Page_Load(object sender, EventArgs e)
         { 
             if (!IsPostBack)

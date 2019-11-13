@@ -14,7 +14,6 @@ namespace LVJ.Entidade
         public eOrigens idorigem { get; set; }
         public eDestinos iddestino { get; set; }
         public eAdicionarVoo horaPartida { get; set; }
-        public string disponivel { get; set; }
 
         public int idViagem { get; set; }
 
