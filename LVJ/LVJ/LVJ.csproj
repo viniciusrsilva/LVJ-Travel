@@ -109,7 +109,6 @@
     <Content Include="Estilos\minhas-reservas.css" />
     <Content Include="inicio.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="Estilos\recuperar-senha.css" />
     <Content Include="minhas-reservas.aspx" />
     <Content Include="origens.aspx" />
     <Content Include="adicionar-aeronave.aspx" />

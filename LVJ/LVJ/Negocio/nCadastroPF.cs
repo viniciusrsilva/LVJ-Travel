@@ -24,7 +24,7 @@ namespace LVJ.Negocio
 
             try
             {
-                string query = $"INSERT INTO pessoafisica (cliente_idCliente,nomePF,sobrenomePF,masculino,feminino,cpfPF,rgPF,dataNascimentoPF) VALUES ((select max(idCliente) from cliente),'{nomePF}','{sobrenomePF}','{masculino}','{feminino}','{cpfPF}','{rgPF}','{dataNascimentoPF}')";
+                string query = $"INSERT INTO pessoafisica (cliente_idCliente,nomePF,sobrenomePF,masculino,feminino,cpfPF,rgPF,dataNascimentoPF) VALUES ((select max(idCliente) from cliente),'{nomePF}','{sobrenomePF}','{masculino}','{feminino}','{cpfPF}','{rgPF}',DATE_FORMAT(STR_TO_DATE('{dataNascimentoPF}', '%Y-%m-%d'), '%d/%m/%Y'))";
                 conexao.ModificarTabela(query);
             }
             catch (Exception exp)

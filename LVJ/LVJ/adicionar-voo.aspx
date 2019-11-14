@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-6">
                         <label for="lblData">Data de partida:</label>
-                        <input type="text" id="txtData" runat="server" class="form-control border" required />
+                        <input type="date" id="txtData" runat="server" class="form-control border" required />
                         <asp:RequiredFieldValidator Display="Static" ValidationGroup="validacao" runat="server" ControlToValidate="txtData" EnableClientScript="false" ErrorMessage="Informe a data de partida"></asp:RequiredFieldValidator>
                     </div>
 
