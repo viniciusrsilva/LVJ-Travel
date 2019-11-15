@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace LVJ
 {
-    public partial class rel_reservas : System.Web.UI.Page
+    public partial class rel_reservas_detalhado : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,7 +22,7 @@ namespace LVJ
                 DataTable reservas = new DataTable();
                 nRelReservas reserva = new nRelReservas();
 
-                reserva.recuperarReservas(reservas);
+                reserva.recuperarReservasCompleto(reservas);
 
                 gdvReservas.DataSource = reservas;
                 gdvReservas.DataBind();

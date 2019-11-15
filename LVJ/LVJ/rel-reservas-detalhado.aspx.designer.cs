@@ -10,7 +10,7 @@
 namespace LVJ {
     
     
-    public partial class inicio_restrito {
+    public partial class rel_reservas_detalhado {
         
         /// <summary>
         /// Controle form1.
@@ -22,12 +22,12 @@ namespace LVJ {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle btnSair.
+        /// Controle gdvReservas.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnSair;
+        protected global::System.Web.UI.WebControls.GridView gdvReservas;
     }
 }

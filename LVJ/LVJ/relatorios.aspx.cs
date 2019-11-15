@@ -11,7 +11,13 @@ namespace LVJ
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                if (Session["idAdm"] == null || Session["idAdm"].ToString() == "0")
+                {
+                    Response.Redirect("administrativo.aspx");
+                }
+            }
         }
     }
 }

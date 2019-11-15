@@ -99,9 +99,11 @@
     <Content Include="img\boeing.png" />
     <Content Include="img\cadastre-se.png" />
     <Content Include="img\esqueci-minha-senha.png" />
+    <Content Include="img\logo-cinza.PNG" />
     <Content Include="img\meus-dados.png" />
     <Content Include="img\reserva-passagem.png" />
     <Content Include="Estilos\informacoes-clientePJ.css" />
+    <Content Include="img\restrito\sair.png" />
     <Content Include="inicio-restrito.aspx" />
     <Content Include="meus-dadosPF.aspx" />
     <Content Include="meus-dadosPJ.aspx" />
@@ -125,6 +127,7 @@
     <Content Include="Estilos\origensDestinos.css" />
     <Content Include="Estilos\relatorios.css" />
     <Content Include="rel-clientes.aspx" />
+    <Content Include="rel-reservas-detalhado.aspx" />
     <Content Include="rel-reservas.aspx" />
     <Content Include="relatorios.aspx" />
     <Content Include="saude.aspx" />
@@ -419,6 +422,13 @@
     </Compile>
     <Compile Include="rel-clientes.aspx.designer.cs">
       <DependentUpon>rel-clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rel-reservas-detalhado.aspx.cs">
+      <DependentUpon>rel-reservas-detalhado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rel-reservas-detalhado.aspx.designer.cs">
+      <DependentUpon>rel-reservas-detalhado.aspx</DependentUpon>
     </Compile>
     <Compile Include="rel-reservas.aspx.cs">
       <DependentUpon>rel-reservas.aspx</DependentUpon>

@@ -13,13 +13,20 @@ namespace LVJ
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataTable clientes = new DataTable();
-            nRelClientes cliente = new nRelClientes();
+            if (Session["idAdm"] == null || Session["idAdm"].ToString() == "0")
+            {
+                Response.Redirect("administrativo.aspx");
+            }
+            else
+            {
+                DataTable clientes = new DataTable();
+                nRelClientes cliente = new nRelClientes();
 
-            cliente.recuperarClientes(clientes);
+                cliente.recuperarClientes(clientes);
 
-            gdvClientes.DataSource = clientes;
-            gdvClientes.DataBind();
+                gdvClientes.DataSource = clientes;
+                gdvClientes.DataBind();
+            }
         }
 
         protected void gdvClientes_RowCommand(object sender, GridViewCommandEventArgs e)

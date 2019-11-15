@@ -22,7 +22,7 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="inicio-restrito.html">
+            <a class="navbar-brand" href="inicio-restrito.aspx">
                 <img src="../img/logo.png" /></a>
             <span id="titulo" class="navbar-text">Relatórios</span>
         </nav>
@@ -36,6 +36,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Reservas por cliente</td>
+                        <td><a href="rel-reservas-detalhado.aspx"><i class="fas fa-print"></i></a></td>
+                    </tr>
                     <tr>
                         <td>Total de reservas por cliente</td>
                         <td><a href="rel-reservas.aspx"><i class="fas fa-print"></i></a></td>

@@ -21,7 +21,10 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <h4>Total de clientes por tipo de pessoa</h4>
+            <h4>
+                <img src="img/logo-cinza.png" />
+                Total de clientes por tipo de pessoa
+            </h4>
 
             <asp:GridView ID="gdvClientes" CssClass="table table-bordered" runat="server" AutoGenerateColumns="false" OnRowCommand="gdvClientes_RowCommand">
                 <Columns>

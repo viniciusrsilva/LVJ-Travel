@@ -61,6 +61,11 @@
             <img src="img/restrito/relatorios.png" />
             <p id="btnTitulo">Relatórios</p>
         </a>
+
+        <a href="#" id="btnSair" class="btn btn-outline-secondary" runat="server" onserverclick="btnSair_ServerClick">
+            <img src="img/restrito/sair.png" />
+            <p id="btnTitulo">Sair</p>
+        </a>
     </div>
     </form>
 </body>

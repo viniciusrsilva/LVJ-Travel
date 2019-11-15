@@ -22,5 +22,18 @@ namespace LVJ.Negocio
                 throw exp;
             }
         }
+
+        public void recuperarReservasCompleto(DataTable reserv)
+        {
+            try
+            {
+                string query = $"SELECT cliente_idcliente, nomeCliente, cidadeOrigem, cidadeDestino, dataViagem, horaPartida, emissao, reservaFirst, reservaBusiness, reservaEconomy FROM passagem AS p INNER JOIN cliente ON p.cliente_idcliente = cliente.idCliente INNER JOIN voo ON p.voo_idvoo = voo.idvoo INNER JOIN origens ON voo.origem = origens.idorigem INNER JOIN destinos ON voo.destino = destinos.iddestinos ORDER BY nomeCliente;";
+                conexao.CarregaTabela(query, reserv);
+            }
+            catch (Exception exp)
+            {
+                throw exp;
+            }
+        }
     }
 }

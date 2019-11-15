@@ -19,5 +19,12 @@ namespace LVJ
                 }
             }
         }
+
+        protected void btnSair_ServerClick(object sender, EventArgs e)
+        {
+            Session["idAdm"] = null;
+
+            Response.Redirect("inicio.aspx");
+        }
     }
 }

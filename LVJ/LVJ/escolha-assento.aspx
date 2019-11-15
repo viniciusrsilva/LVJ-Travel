@@ -25,55 +25,59 @@
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
-        <a class="navbar-brand" href="inicio.aspx"><img src="img/logo.png" /></a>
+                <a class="navbar-brand" href="inicio.aspx">
+                    <img src="img/logo.png" /></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#listaLinks">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#listaLinks">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div id="listaLinks" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color:white" href="#" id="navbardrop" data-toggle="dropdown">Informações</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="vacinas.aspx">Vacinas</a>
-                        <a class="dropdown-item" href="documentos.aspx">Documentos para embarcar</a>
-                        <a class="dropdown-item" href="saude.aspx">Dicas de saúde em viagem</a>
-                    </div>
-                </li>
+                <div id="listaLinks" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white" href="vacinas.aspx">Vacinas</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" style="color:white" href="atendimento.aspx">Atendimento</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white" href="documentos.aspx">Documentos para embarcar</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="linkCadastro" runat="server" class="nav-link" style="color:white" href="cadastre-se.aspx">Cadastre-se</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white" href="saude.aspx">Dicas de saúde</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="linkLogin" runat="server" class="nav-link" style="color:white" href="login.aspx">Fazer login</a>
-                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white" href="atendimento.aspx">Atendimento</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="dadosPF" runat="server" class="nav-link" style="color:white; display:none" href="meus-dadosPF.aspx">Meus dados</a>
-                    <a id="dadosPJ" runat="server" class="nav-link" style="color:white; display:none" href="meus-dadosPJ.aspx">Meus dados</a>
-                </li>
+                        <li class="nav-item">
+                            <a id="linkCadastro" runat="server" class="nav-link" style="color: white" href="cadastre-se.aspx">Cadastre-se</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="reservas" runat="server" class="nav-link" style="color: white; display: none" href="minhas-reservas.aspx">Minhas reservas</a>
-                </li>
+                        <li class="nav-item">
+                            <a id="linkLogin" runat="server" class="nav-link" style="color: white" href="login.aspx">Fazer login</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="loginNome" class="nav-link" style="color:white; display:none" runat="server"></a>
-                </li>
+                        <li class="nav-item">
+                            <a id="dadosPF" runat="server" class="nav-link" style="color: white; display: none" href="meus-dadosPF.aspx">Meus dados</a>
+                            <a id="dadosPJ" runat="server" class="nav-link" style="color: white; display: none" href="meus-dadosPJ.aspx">Meus dados</a>
+                        </li>
 
-                <li class="nav-item">
-                    <a id="sair" class="nav-link" style="color:white; display:none" runat="server" onserverclick="sair_ServerClick">Sair</a>
-                </li>
+                        <li class="nav-item">
+                            <a id="reservas" runat="server" class="nav-link" style="color: white; display: none" href="minhas-reservas.aspx">Minhas reservas</a>
+                        </li>
 
-            </ul>
-        </div>
-    </nav>
+                        <li class="nav-item">
+                            <a id="loginNome" class="nav-link" style="color: white; display: none" runat="server"></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="sair" class="nav-link" style="color: white; display: none" runat="server" onserverclick="sair_ServerClick">Sair</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
 
         <img id="imgBusca" src="img/reserva-passagem.png" />
 
