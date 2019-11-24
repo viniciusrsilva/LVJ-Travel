@@ -69,7 +69,7 @@
                             <asp:RequiredFieldValidator Display="Static" ValidationGroup="validacao" runat="server" ControlToValidate="txtSenha" EnableClientScript="false" ErrorMessage="Informe a senha"></asp:RequiredFieldValidator>
                         </div>
                         
-                        <button id="salvarUsuario" type="submit" runat="server" onserverclick="salvarUsuario_ServerClick" class="btn btn-dark">Salvar</button>
+                        <button id="salvarUsuario" type="button" runat="server" onserverclick="salvarUsuario_ServerClick" class="btn btn-dark">Salvar</button>
                     </div>
                 </div>
 
