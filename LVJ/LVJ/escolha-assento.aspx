@@ -176,7 +176,7 @@
             <div class="alert alert-danger" id="erroBusiness" style="display: none;" runat="server"><strong>Erro!</strong> Quantidade de assentos na classe Business indisponível. Por favor verifique a quantidade solicitada.</div>
             <div class="alert alert-danger" id="erroEconomy" style="display: none;" runat="server"><strong>Erro!</strong> Quantidade de assentos na classe Economy indisponível. Por favor verifique a quantidade solicitada.</div>
 
-            <button id="btnSalvar" class="btn btn-dark" runat="server" onserverclick="btnSalvar_ServerClick" type="submit">Salvar</button>
+            <button id="btnSalvar" class="btn btn-dark" runat="server" onserverclick="btnSalvar_ServerClick" type="button">Salvar</button>
         </div>
 
         <div id="footer"></div>

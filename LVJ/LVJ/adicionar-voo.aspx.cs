@@ -44,6 +44,9 @@ namespace LVJ
 
                     voo.cadastrarNovo();
 
+                    txtData.Value = "";
+                    txtHora.Value = "";
+
                     Response.Redirect("voos.aspx");
                 }
             }

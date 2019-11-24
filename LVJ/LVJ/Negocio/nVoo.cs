@@ -14,7 +14,7 @@ namespace LVJ.Negocio
         {
             try
             {
-                string query = $"SELECT idvoo, nomeAeronave, cidadeOrigem, cidadeDestino, dataViagem, horaPartida FROM voo INNER JOIN aeronave ON voo.aeronave_idaeronave = aeronave.idAeronave INNER JOIN origens ON voo.origem = origens.idorigem INNER JOIN destinos ON voo.destino = destinos.iddestinos ORDER BY dataViagem;";
+                string query = $"SELECT idvoo, nomeAeronave, cidadeOrigem, cidadeDestino, dataViagem, horaPartida FROM voo INNER JOIN aeronave ON voo.aeronave_idaeronave = aeronave.idAeronave INNER JOIN origens ON voo.origem = origens.idorigem INNER JOIN destinos ON voo.destino = destinos.iddestinos ORDER BY cidadeOrigem;";
                 conexao.CarregaTabela(query, voos);
             }
             catch (Exception exp)

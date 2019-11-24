@@ -64,7 +64,7 @@
                     </div>
                 </div>
 
-                <button id="btnSalvarVoo" type="submit" class="btn btn-dark" runat="server" onserverclick="btnSalvarVoo_ServerClick">Salvar</button>
+                <button id="btnSalvarVoo" type="button" class="btn btn-dark" runat="server" onserverclick="btnSalvarVoo_ServerClick">Salvar</button>
             </div>
         </div>
     </form>

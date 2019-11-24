@@ -245,7 +245,7 @@
             </div>
 
             <div id="btnSalvar" class="form-group">
-                <button class="btn btn-dark" id="salvarPF" type="submit" runat="server" onserverclick="salvarPF_ServerClick1">Salvar</button>
+                <button class="btn btn-dark" id="salvarPF" type="button" runat="server" onserverclick="salvarPF_ServerClick1">Salvar</button>
             </div>
         </div>
 

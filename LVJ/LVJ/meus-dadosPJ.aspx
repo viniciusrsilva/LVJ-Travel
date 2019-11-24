@@ -194,7 +194,7 @@
             </div>
 
             <div id="Salvar_Alteracoes" class="form-group">
-                <button class="btn btn-dark" id="btnSalvar" runat="server" onserverclick="btnSalvar_ServerClick" type="submit">Salvar</button>
+                <button class="btn btn-dark" id="btnSalvar" runat="server" onserverclick="btnSalvar_ServerClick" type="button">Salvar</button>
             </div>
         </div>
 

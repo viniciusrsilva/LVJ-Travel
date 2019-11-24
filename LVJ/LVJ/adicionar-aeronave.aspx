@@ -54,7 +54,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" id="btnSalvar" runat="server" class="btn btn-dark" onserverclick="btnSalvar_ServerClick">Salvar</button>
+                    <button type="button" id="btnSalvar" runat="server" class="btn btn-dark" onserverclick="btnSalvar_ServerClick">Salvar</button>
                 </div>
             </div>
         </div>
